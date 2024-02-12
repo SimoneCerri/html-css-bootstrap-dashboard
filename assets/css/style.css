@@ -54,6 +54,16 @@ ul
 
 /* #region Utilities */
 
+.flex_basis_small
+{
+    flex-basis: 9% ;
+}
+
+.flex_basis_big
+{
+    flex-basis: 79%;
+}
+
 /* #endregion Utilities */
 
 
@@ -65,7 +75,6 @@ ul
     .logo_big
     {
         display: none;
-        width: ;
 
         @media screen and (min-width:1200px)
         {
@@ -75,7 +84,6 @@ ul
 
     .logo_small
     {
-        width: 70px;
 
         @media screen and (min-width:1200px)
         {
@@ -106,7 +114,7 @@ ul
 
             @media screen and (min-width:1200px)
             {
-                display: flex;
+                display: block;
             }
             
         }
