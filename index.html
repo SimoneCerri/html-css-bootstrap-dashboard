@@ -22,15 +22,120 @@
 <body class="debug">
 
     <header id="site_header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Disabled</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- /#site_header -->
     <main id="site_main">
+        <div class="row">
+            <div class="col-1 my_left_side d-flex flex-column justify-content-between">
+                <div class="general">
+                    <div>Home</div>
+                    <div>Stats</div>
+                    <div>Signals</div>
+                </div>
+                <!-- /.general -->
+                <div class="admin">
+                    <div>Admin</div>
+                </div>
+                <!-- /.admin -->
+            </div>
+            <!-- /.col-1 -->
+            <!-- /.left_site -->
+            <div class="col-11 my_right_side p-0">
+                <div class="my_banner">
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
+                </div>
+                <!-- /.my_banner -->
+                <div class="big_content_block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8 first_content">
+                                <div class="card next_class">
+
+                                </div>
+                                <!-- /.next_class -->
+                                <div class="card faq">
+
+                                </div>
+                                <!-- /.faq -->
+                            </div>
+                            <!-- /.col-8 -->
+                            <!-- /.first_content -->
+                            <div class="col-4 second_content">
+                                <div class="card to_do">
+
+                                </div>
+                                <!-- /.to_do -->
+                                <div class="card active_users">
+
+                                </div>
+                                <!-- /.active_users -->
+                            </div>
+                            <!-- /.col-4 -->
+                            <!-- /.second_content -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.big_content_block -->
+            </div>
+            <!-- /.col-11 -->
+        </div>
+        <!-- /.row -->
+        <!-- /.right_site -->
 
     </main>
     <!-- /#site_main -->
     <footer id="site_footer">
-        
+
     </footer>
     <!-- /#site_footer -->
 
