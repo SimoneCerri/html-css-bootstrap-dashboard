@@ -44,6 +44,11 @@ body
     font-family: "Roboto", sans-serif;
 }
 
+ul 
+{
+    list-style: none;
+}
+
 /* #endregion Common */
 
 
@@ -90,7 +95,7 @@ body
             font-size: 25px;
         }
 
-        .will_hide
+        .hide_menu
         {
             display: none;
             a 
@@ -106,7 +111,7 @@ body
             
         }
         
-        .still_here
+        .still_menu
         {
             a 
             {
