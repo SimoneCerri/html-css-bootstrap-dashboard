@@ -2,7 +2,7 @@
 
 .debug .my_banner
 {
-    height: 100px;
+    height: 200px;
     background-color: paleturquoise;
 }
 
@@ -68,6 +68,22 @@ body
 
 
 /* #region MediaQuery */
+
+@media screen and (width:768px)
+{
+    .my_banner
+    {
+        .row
+        {
+            flex-direction: row;
+
+            :first-child
+            {
+                order: 3;
+            }
+        }
+    }
+}
 
 /* #endregion MediaQuery */
 
