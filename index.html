@@ -22,44 +22,57 @@
 <body class="debug">
 
     <header id="site_header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true">Disabled</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+        <nav class="">
+            <div class="container-fluid p-3">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-2 p-0">
+                        <a class="" href="#">
+                            <div class="logo_big">
+                                <img src="./assets/img/logo.svg" alt="" class="img-fluid">
+                            </div>
+                            <!-- /.logo_big -->
+                            <div class="logo_small">
+                                <img src="./assets/img/mobile-logo.png" alt="" class="img-fluid">
+                            </div>
+                            <!-- /.logo_small -->
+                        </a>
+                    </div>
+                    <div class="col-8 p-0">
+                        <form class="d-flex align-items-center" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form-control me-2" type="search"
+                                placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="col-2 p-0 right_menu">
+                        <ul class="row">
+                            <li class="col-3">
+                                <a href="">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </a>
+                            </li>
+                            <li class="col-3">
+                                <a href="">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </a>
+                            </li>
+                            <li class="col-3">
+                                <a href="">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </li>
+                            <li class="col-3">
+                                <a href="">
+                                    <i class="fa-solid fa-bell"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    </ul>
+
+
+
+
                 </div>
             </div>
         </nav>
@@ -67,7 +80,7 @@
     <!-- /#site_header -->
     <main id="site_main">
         <div class="row">
-            <div class="col-1 my_left_side d-flex flex-column justify-content-between">
+            <div class="col-sm-2 col-md-1 col-lg-2 col-xl-1 my_left_side d-flex flex-column justify-content-between">
                 <div class="general">
                     <div>Home</div>
                     <div>Stats</div>
@@ -81,10 +94,10 @@
             </div>
             <!-- /.col-1 -->
             <!-- /.left_site -->
-            <div class="col-11 my_right_side p-0">
+            <div class="col-sm-10 col-md-11 col-lg-10 col-xl-11 my_right_side p-0">
                 <div class="my_banner">
                     <div class="container-fluid">
-                        <div class="row flex-column gap-3">
+                        <div class="d-md-flex gap-3">
                             <div class="col-4">
                                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -103,7 +116,7 @@
                                 </div>
                             </div>
                             <!-- /.col-4 -->
-                            
+
                             <!-- /.col-4 -->
                         </div>
                         <!-- /.row -->

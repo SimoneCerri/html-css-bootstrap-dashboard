@@ -54,6 +54,68 @@ body
 
 /* #region Header */
 
+#site_header
+{
+
+    .logo_big
+    {
+        display: none;
+        width: ;
+
+        @media screen and (min-width:1200px)
+        {
+            display:block;
+        }
+    }
+
+    .logo_small
+    {
+        width: 70px;
+
+        @media screen and (min-width:1200px)
+        {
+            display: none;
+        }
+    }
+
+    .right_menu
+    {
+        @media screen and (min-width:1200px)
+        {
+            display: flex;
+        }
+
+        a 
+        {
+            font-size: 25px;
+        }
+
+        .will_hide
+        {
+            display: none;
+            a 
+            {
+                color: #333;
+            }
+            
+
+            @media screen and (min-width:1200px)
+            {
+                display: flex;
+            }
+            
+        }
+        
+        .still_here
+        {
+            a 
+            {
+                color: orange;
+            } 
+        }
+    }
+}
+
 /* #endregion Header */
 
 
@@ -69,15 +131,13 @@ body
 
 /* #region MediaQuery */
 
-@media screen and (width:768px)
+@media screen and (min-width:768px)
 {
     .my_banner
     {
-        .row
+        .d-md-flex
         {
-            flex-direction: row;
-
-            :first-child
+            col-4:first-child
             {
                 order: 3;
             }
