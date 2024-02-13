@@ -19,184 +19,89 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="debug">
 
     <header id="site_header">
-            <div class="container-fluid bg-light p-3">
-                <div class="row align-items-center justify-content-between bg-white">
-                    <div class="col-1">
-                        <a class="" href="#">
-                            <div class="logo_big">
-                                <img src="./assets/img/logo.svg" alt="" class="img-fluid">
-                            </div>
-                            <!-- /.logo_big -->
-                            <div class="logo_small">
-                                <img src="./assets/img/mobile-logo.png" alt="" class="img-fluid">
-                            </div>
-                            <!-- /.logo_small -->
-                        </a>
-                    </div>
-                    <div class="col-10">
-                        <form class="d-flex align-items-center px-3" role="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="form-control me-2" type="search"
-                                placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                        </form>
-                    </div>
-                    <div class="col-1 right_menu">
-                        <ul class="row">
-                            <li class="col-3 hide_menu">
-                                <a href="">
-                                    <i class="fa-solid fa-list-ul"></i>
-                                </a>
-                            </li>
-                            <li class="col-3 hide_menu">
-                                <a href="">
-                                    <i class="fa-solid fa-circle-question"></i>
-                                </a>
-                            </li>
-                            <li class="col-3 hide_menu">
-                                <a href="">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
-                            </li>
-                            <li class="col-3 still_menu ">
-                                <a href="">
-                                    <i class="fa-solid fa-bell"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/mobile-logo.png" width="50px" alt="" class="img-fluid">
+                </a>
+                <form class="d-flex align-items-center px-3" role="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search">
+                </form>
+                <div class="dropdown">
+                    <button class="btn text-warning" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell"></i>
+                        
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
             </div>
+
+        </nav>
+
     </header>
-    <!-- /#site_header -->
-    <main id="site_main">
-        <div class="row">
-            <div class="col-2 col-sm-2 col-md-1 col-lg-2 col-xl-1 my_left_side d-flex flex-column justify-content-between bg-warning-subtle align-items-center">
-                <div class="general">
-                    <div class="d-flex">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="hide_side">Home</span>
+
+
+    <div class="my_app d-flex">
+        <nav class="side_nav">
+
+        </nav>
+
+        <main id="site_main">
+            <div class="container-fluid bg-primary ">
+                <div class="my_jumbo">
+                    <div class="col-4">
+                        uno
                     </div>
-                    <div class="d-flex">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span class="hide_side">Stats</span>
+                    <div class="col-4">
+                        due
                     </div>
-                    <div class="d-flex">
-                        <i class="fa-solid fa-signal"></i>
-                        <span class="hide_side">Signals</span>
-                    </div>
-                </div>
-                <!-- /.general -->
-                <div class="admin">
-                    <div class="d-flex">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="hide_side">Admin</span>
+                    <div class="col-4">
+                        tre
                     </div>
                 </div>
-                <!-- /.admin -->
             </div>
-            <!-- /.col-1 -->
-            <!-- /.left_site -->
-            <div class="col-10 col-sm-10 col-md-11 col-lg-10 col-xl-11 my_right_side p-0">
-                <div class="my_banner bg-primary">
-                    <div class="container-fluid text-light">
-                        <div class="d-md-flex gap-3">
-                            <div class="col-4 d-flex">
-                                <span class="">Nuovo Studente</span>
-                                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-                                    aria-controls="offcanvasExample">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <div class="offcanvas offcanvas-end hide" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        FORM 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="d-flex text-center">
-                                    <h3>
-                                        Boolean
-                                    </h3>
-                                    <span>
-                                        Piano blaze
-                                    </span>
-                                </div>
-                                <div>
-                                    <span>
-                                        3 app
-                                    </span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </div>
-                            <!-- /.col-4 -->
-                            <div class="col-4">
-                                <div class="">
-                                    Studenti online negli ultimi 30 giorni
-                                </div>
-                                <h4>
-                                    125
-                                </h4>
-                            </div>
-                            <!-- /.col-4 -->
-
-                            <!-- /.col-4 -->
-                        </div>
-                        <!-- /.row -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, perspiciatis libero, ut quam
+                        consequuntur vero veritatis numquam qui facere velit accusantium repudiandae hic tempore. Illo
+                        quos maxime delectus, in quisquam neque officiis deserunt modi, iusto ut similique quam
+                        dignissimos repudiandae ipsam at inventore natus qui aliquam laborum iste saepe ad. Harum esse
+                        dolores, necessitatibus libero tenetur reprehenderit animi eum a iste laboriosam debitis
+                        repudiandae perspiciatis doloribus quam voluptas natus saepe possimus odio delectus earum nemo
+                        consequuntur quod dolorem eius. Eius odit numquam possimus officiis consectetur blanditiis,
+                        quibusdam accusamus, voluptatum id sit perspiciatis. Tenetur nisi dolorem quos quo?
+                        Consequuntur, aliquam dicta?
                     </div>
-                    <!-- /.container-fluid -->
-                </div>
-                <!-- /.my_banner -->
-                <div class="container-fluid big_content_block">
-                    <div class="row">
-                        <div class="col-sm-12 col-xl-8 first_content">
-                            <div class="card next_class">
-
-                            </div>
-                            <!-- /.next_class -->
-                            <div class="card faq">
-
-                            </div>
-                            <!-- /.faq -->
-                        </div>
-                        <!-- /.col-8 -->
-                        <!-- /.first_content -->
-                        <div class="col-sm-12 col-xl-4 second_content">
-                            <div class="card to_do">
-
-                            </div>
-                            <!-- /.to_do -->
-                            <div class="card active_users">
-
-                            </div>
-                            <!-- /.active_users -->
-                        </div>
-                        <!-- /.col-4 -->
-                        <!-- /.second_content -->
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos facere hic voluptatem
+                        accusantium
+                        rem amet, reiciendis minus vel, voluptas officia et ullam tenetur dolorum quia eum nihil
+                        corporis
+                        mollitia excepturi sapiente delectus. Quasi, reiciendis commodi ratione minima quas molestiae
+                        fugiat
+                        exercitationem quibusdam nostrum mollitia assumenda quaerat porro dolorem. Ipsa hic optio
+                        placeat
+                        cupiditate debitis iusto, est porro maiores quis sint facilis qui dignissimos ab soluta nisi
+                        animi
+                        asperiores enim consequuntur aut magni culpa accusantium, ea quam tempore! Facere, perferendis
+                        ipsa
+                        culpa tenetur ut officiis error voluptates quaerat quas vitae consequatur optio? Reprehenderit
+                        praesentium necessitatibus nihil magni impedit officiis accusamus recusandae.
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.container -->
-                <!-- /.big_content_block -->
             </div>
-            <!-- /.col-11 -->
-        </div>
-        <!-- /.row -->
-        <!-- /.right_site -->
-
-    </main>
-    <!-- /#site_main -->
-    <footer id="site_footer">
-
-    </footer>
-    <!-- /#site_footer -->
+        </main>
+    </div>
 
 
 

@@ -1,5 +1,26 @@
 /* #region Debug */
 
+.debug 
+{   
+    *
+    {
+    border: 1px dashed;
+    }
+}
+
+
+
+.debug #site_header
+{
+    height: 70px;
+    background-color: palegoldenrod;
+}
+
+.debug .nav
+{
+
+}
+
 .debug .my_banner
 {
     height: 200px;
@@ -42,6 +63,25 @@
 body
 {
     font-family: "Roboto", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main 
+{
+    overflow-y: auto;
+}
+
+.side_nav 
+{
+    width: 60px;
+    height: calc(100% - 70px);
+    flex-shrink: 0;
+
+    @media screen and (min-width:1400px)
+    {
+        width: 150px;
+    }
 }
 
 ul 
@@ -64,6 +104,11 @@ ul
 #site_header
 {
     background-color: white;
+
+    form 
+    {
+        flex-grow: 1;
+    }
 
     .logo_big
     {
@@ -188,6 +233,15 @@ ul
 /* #endregion MediaQuery */
 
 
-/* #region Bonus */
+/* #region dacapo */
 
-/* #endregion Bonus */
+.my_jumbo
+{
+    @media screen and (min-width:992px)
+    {
+        display: flex;
+    }
+}
+
+
+/* #endregion dacapo */
