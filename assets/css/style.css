@@ -97,13 +97,24 @@ main
 
 .side_nav
 {
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     width: 70px;
     flex-shrink: 0;
+    background: url(../img/sidebar-bg.png);
+    filter: invert();
 
-    @media screen and (min-widht:1400px)
+    @media screen and (min-width:1400px)
     {
         width: 150px;
+    }
+
+    .option_hide
+    {
+        display: none;
+        @media screen and (min-widht:1400px)
+        {
+            display: inline-block;    
+        }
     }
 }
 
