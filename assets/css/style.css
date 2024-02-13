@@ -123,4 +123,20 @@ main
     }
 }
 
+
+.special
+{
+    background-color: rgb(46, 49, 221);
+    border-radius: 20px;
+    padding: 0.2em 0.5em;
+    opacity: 0.7;
+}
+
+.special_circle
+{
+    background-color: rgb(46, 49, 221);
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    opacity: 0.7;
+}
 /* #endregion dacapo */
