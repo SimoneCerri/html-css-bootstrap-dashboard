@@ -42,6 +42,7 @@
 body
 {
     font-family: "Roboto", sans-serif;
+    background-color: whitesmoke;
 }
 
 ul 
@@ -63,6 +64,7 @@ ul
 
 #site_header
 {
+    background-color: white;
 
     .logo_big
     {
@@ -85,12 +87,19 @@ ul
         }
     }
 
+    form 
+    {
+        background-color: lightgray;
+    }
+
+    input[type=search]
+    {
+        border: none;
+        background-color: lightgray;
+    }
+
     .right_menu
     {
-        @media screen and (min-width:1200px)
-        {
-            display: flex;
-        }
 
         a 
         {
