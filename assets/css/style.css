@@ -139,4 +139,40 @@ main
     padding: 0.5em 0.6em;
     opacity: 0.7;
 }
+
+.done
+{
+    background-color: rgb(1, 71, 1);
+    color: white;
+    border-radius: 7px;
+    padding: 0.2em 0.5em;
+    margin-right: -0.5em;
+}
+
+.failed
+{
+    background-color: rgb(95, 14, 14);
+    color: white;
+    border-radius: 7px;
+    padding: 0.2em 0.5em;
+    margin-right: -0.5em;
+}
+
+.process
+{
+    background-color: rgb(185, 145, 35);
+    color: white;
+    border-radius: 7px;
+    padding: 0.2em 0.5em;
+    margin-right: -0.5em;;
+}
+
+.action_card
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5em 0.6em;
+    color: gray;
+}
+
 /* #endregion dacapo */

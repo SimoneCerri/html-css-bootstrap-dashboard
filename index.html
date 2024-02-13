@@ -155,11 +155,11 @@
                 </div>
                 <div class="d-xxl-flex pb-3 gap-3">
                     <i class="fa-solid fa-chart-simple"></i>
-                    <span class="d-none d-xxl-block">Home</span>
+                    <span class="d-none d-xxl-block">Stats</span>
                 </div>
                 <div class="d-xxl-flex pb-3 gap-3">
                     <i class="fa-solid fa-signal"></i>
-                    <span class="d-none d-xxl-block">Home</span>
+                    <span class="d-none d-xxl-block">Signals</span>
                 </div>
             </div>
             <div class="my_admin d-xxl-flex pb-3 gap-3 align-items-center">
@@ -177,7 +177,7 @@
                             data-bs-target="#offcanvas" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus"></i>
                         </button>
-                        <div class="offcanvas offcanvas-end hide" tabindex="-1" id="offcanvas"
+                        <div class="offcanvas offcanvas-end hide w-50" tabindex="-1" id="offcanvas"
                             aria-labelledby="offcanvasLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
@@ -185,23 +185,110 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with
-                                            anyone else.</div>
+                                <form class="row g-3">
+                                    <div class="col-6">
+                                        <label for="validationServer01" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="validationServer01"
+                                            value="" required placeholder="Inserisci qui il tuo nome">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <div class="col-6">
+                                        <label for="validationServer02" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="validationServer02"
+                                            value="" required placeholder="Inserisci qui il tuo cognome">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    <div class="col-6">
+                                        <label for="validationServerUsername" class="form-label">Email</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                            <input type="text" class="form-control is-invalid"
+                                                id="validationServerUsername"
+                                                aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                                                required placeholder="Inserisci la tua email">
+                                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                                                Inserisci una email valida.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <div class="col-md-6">
+                                        <label for="validationServer03" class="form-label">Password</label>
+                                        <input type="text" class="form-control is-invalid" id="validationServer03"
+                                            aria-describedby="validationServer03Feedback" required placeholder="Inserisci una password segreta">
+                                        <div id="validationServer03Feedback" class="invalid-feedback">
+                                            La password è necessaria.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="validationServer01" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="validationServer01" value="" required placeholder="Inserisci una via dove possa arrivare anche un corriere (?)">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="validationServer01" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="validationServer01" value=""
+                                            placeholder="Inserisci qui il tuo nome">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="validationServer04" class="form-label">Stato</label>
+                                        <select class="form-select is-invalid" id="validationServer04"
+                                            aria-describedby="validationServer04Feedback" required>
+                                            <option selected disabled value="">Scegli...</option>
+                                            <option>Italia</option>
+                                            <option>UK</option>
+                                            <option>USA</option>
+                                            <option>URSS</option>
+                                            <option>Korea</option>
+                                            <option>Cina</option>
+                                            <option>Giappone</option>
+                                            <option>Germania</option>
+                                            <option>Francia</option>
+                                            <option>Spagna</option>
+                                            <option>Portogallo</option>
+                                            <option>Grecia</option>
+                                            <option>Finlandia</option>
+                                            <option>etc etc</option>
+                                        </select>
+                                        <div id="validationServer04Feedback" class="invalid-feedback">
+                                            Seleziona uno stato esistente.
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="validationServer01" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="validationServer01" value="" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-4">
+                                        <input type="file" class="form-control" aria-label="file example" required>
+                                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input is-invalid" type="checkbox" value=""
+                                                id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                                            <label class="form-check-label" for="invalidCheck3">
+                                                Seleziona per proseguire
+                                            </label>
+                                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                                E' necessario accettare per inviare il modulo.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -258,18 +345,19 @@
                                                     Nome
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex text-end justify-content-end gap-3">
+                                            <div
+                                                class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3 justify-content-around">
                                                 <div class="col-3 d-none d-md-block">
                                                     Data inizio
                                                 </div>
-                                                <div class="col-3 d-none d-md-block">
+                                                <div class="col-3 d-none d-md-block text-center">
                                                     ROl
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-3 col-sm-3 col-md-2">
                                                     Stato
                                                 </div>
-                                                <div class="col-3">
-                                                    Azioni
+                                                <div class="col-3 col-sm-3 col-md-2">
+                                                    <span>Azioni</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -278,25 +366,222 @@
                                         <div class="row">
                                             <div class="col-6 col-sm-6 col-md-4 col-xl-6">
                                                 <div class="col-8 col-md-4 d-flex align-items-center gap-3">
-                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt="" class="img-fluid">
-                                                    <div class="text-nowrap ">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
                                                         Classe 75
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex text-end justify-content-end gap-3">
-                                                <div class="col-3 d-none d-md-block text-nowrap ">
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
                                                     15 Febbraio 2021
                                                 </div>
-                                                <div class="col-3 d-none d-md-block">
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
                                                     20%
                                                 </div>
-                                                <div class="col-3">
-                                                    Done
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="done">done</span>
                                                 </div>
-                                                <div class="col-3 d-flex gap-3 justify-content-end">
-                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    <i class="fa-solid fa-trash"></i>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 76
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    16 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="done">done</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 77
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    17 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="process text-nowrap">process</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 78
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    18 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="done">done</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 79
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    19 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="failed">failed</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 80
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    20 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="done">done</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 81
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    21 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="failed">failed</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-xl-6">
+                                                <div class="col-8 col-md-4 d-flex align-items-center gap-3">
+                                                    <img src="./assets/img/class-avatar.jpg" width="30px" alt=""
+                                                        class="img-fluid">
+                                                    <div class="text-nowrap">
+                                                        Classe 82
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-8 col-xl-6 d-flex gap-3">
+                                                <div class="col-3 d-none d-md-block text-nowrap col-4-md">
+                                                    22 Febbraio 2021
+                                                </div>
+                                                <div class="col-3 d-none d-md-block col-2-md text-center">
+                                                    20%
+                                                </div>
+                                                <div class="col-5 col-sm-5 col-md-2">
+                                                    <span class="done">done</span>
+                                                </div>
+                                                <div class="col-5 col-sm-5 d-flex gap-3 col-4-md">
+                                                    <i class="fa fa-pencil action_card" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-trash action_card"></i>
                                                 </div>
                                             </div>
                                         </div>
