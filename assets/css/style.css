@@ -8,51 +8,10 @@
     }
 }
 
-
-
 .debug #site_header
 {
     height: 70px;
     background-color: palegoldenrod;
-}
-
-.debug .nav
-{
-
-}
-
-.debug .my_banner
-{
-    height: 200px;
-    background-color: paleturquoise;
-}
-
-.debug
-{
-    .next_class,
-    .active_users
-    {
-        height: 300px;
-        background-color: palegoldenrod; 
-    }
-
-    .faq,
-    .to_do
-    {
-        height: 150px;
-        background-color: palegoldenrod;
-    }
-}
-.debug .my_left_side
-{
-    height: 1000px;
-    background-color: palegreen;
-}
-
-.debug .my_right_side
-{
-    height: 1000px;
-    background-color: white;
 }
 
 /* #endregion Debug */
@@ -72,23 +31,6 @@ main
     overflow-y: auto;
 }
 
-.side_nav 
-{
-    width: 60px;
-    height: calc(100% - 70px);
-    flex-shrink: 0;
-
-    @media screen and (min-width:1400px)
-    {
-        width: 150px;
-    }
-}
-
-ul 
-{
-    list-style: none;
-}
-
 /* #endregion Common */
 
 
@@ -101,109 +43,13 @@ ul
 
 /* #region Header */
 
-#site_header
-{
-    background-color: white;
 
-    form 
-    {
-        flex-grow: 1;
-    }
-
-    .logo_big
-    {
-        display: none;
-        
-
-        @media screen and (min-width:1200px)
-        {
-            display:block;
-        }
-    }
-
-    .logo_small
-    {
-        min-width: 60px;
-        
-        @media screen and (min-width:1200px)
-        {
-            display: none;
-        }
-    }
-
-    form 
-    {
-        background-color: lightgray;
-    }
-
-    input[type=search]
-    {
-        border: none;
-        background-color: lightgray;
-    }
-
-    .right_menu
-    {
-
-        a 
-        {
-            font-size: 25px;
-        }
-
-        .hide_menu
-        {
-            display: none;
-            a 
-            {
-                color: #333;
-            }
-            
-
-            @media screen and (min-width:1200px)
-            {
-                display: block;
-            }
-            
-        }
-        
-        .still_menu
-        {
-            a 
-            {
-                color: orange;
-            } 
-        }
-    }
-}
 
 /* #endregion Header */
 
 
 /* #region Main */
 
-#site_main
-{
-   .my_left_side
-    {
-        background: url(../img/sidebar-bg.png);
-        filter: invert();
-
-        a
-        {
-            font-size: 25px;
-        }
-
-        .hide_side
-        {
-            display: none;
-
-            @media screen and (min-width:1200px)
-            {
-                display: block;
-            }
-        }
-    }  
-}
 
 
 /* #endregion Main */
@@ -216,24 +62,50 @@ ul
 
 /* #region MediaQuery */
 
-@media screen and (min-width:768px)
-{
-    .my_banner
-    {
-        .d-md-flex
-        {
-            col-4:first-child
-            {
-                order: 3;
-            }
-        }
-    }
-}
+
 
 /* #endregion MediaQuery */
 
 
 /* #region dacapo */
+
+#site_header
+{
+    height: 70px;
+    background-color: white;
+
+    form
+    {
+        flex-grow: 1;
+        background-color: lightgray;
+
+        input[type=search]
+        {
+            border: none;
+            background-color: lightgray;
+        }
+    }
+
+
+    a
+    {
+        width: 40px;
+    }
+
+
+}
+
+.side_nav
+{
+    height: calc(100% - 70px);
+    width: 70px;
+    flex-shrink: 0;
+
+    @media screen and (min-widht:1400px)
+    {
+        width: 150px;
+    }
+}
 
 .my_jumbo
 {
@@ -244,4 +116,31 @@ ul
 }
 
 
+.hide_till_breakpoint
+{
+    display: none;
+
+    @media screen and (min-width:1200px)
+    {
+        display: block;
+    }
+}
+
+.logo_big
+{
+    display: none;
+}
+
+@media screen and (min-widht:1200px)
+{
+    .logo_small
+    {
+        display: none;
+    }
+
+    .logo_big
+    {
+        display: block;
+    }
+}
 /* #endregion dacapo */
