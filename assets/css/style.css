@@ -142,7 +142,7 @@ main
 
 .done
 {
-    background-color: rgb(1, 71, 1);
+    background-color: #198754FF;
     color: white;
     border-radius: 7px;
     padding: 0.2em 0.5em;
@@ -151,7 +151,7 @@ main
 
 .failed
 {
-    background-color: rgb(95, 14, 14);
+    background-color: #dc3545FF;
     color: white;
     border-radius: 7px;
     padding: 0.2em 0.5em;
@@ -160,7 +160,7 @@ main
 
 .process
 {
-    background-color: rgb(185, 145, 35);
+    background-color: #ffc107FF;
     color: white;
     border-radius: 7px;
     padding: 0.2em 0.5em;
