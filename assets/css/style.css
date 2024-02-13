@@ -71,6 +71,7 @@ main
 
 #site_header
 {
+
     height: 70px;
     background-color: white;
 
@@ -95,6 +96,11 @@ main
 
 }
 
+#site_main
+{
+    height: calc(100vh - 70px);
+}
+
 .side_nav
 {
     height: calc(100vh - 70px);
@@ -107,15 +113,6 @@ main
     {
         width: 150px;
     }
-
-    .option_hide
-    {
-        display: none;
-        @media screen and (min-widht:1400px)
-        {
-            display: inline-block;    
-        }
-    }
 }
 
 .my_jumbo
@@ -126,32 +123,4 @@ main
     }
 }
 
-
-.hide_till_breakpoint
-{
-    display: none;
-
-    @media screen and (min-width:1200px)
-    {
-        display: block;
-    }
-}
-
-.logo_big
-{
-    display: none;
-}
-
-@media screen and (min-widht:1200px)
-{
-    .logo_small
-    {
-        display: none;
-    }
-
-    .logo_big
-    {
-        display: block;
-    }
-}
 /* #endregion dacapo */
