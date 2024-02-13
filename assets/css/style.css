@@ -42,7 +42,6 @@
 body
 {
     font-family: "Roboto", sans-serif;
-    background-color: whitesmoke;
 }
 
 ul 
@@ -136,6 +135,31 @@ ul
 
 
 /* #region Main */
+
+#site_main
+{
+   .my_left_side
+    {
+        background: url(../img/sidebar-bg.png);
+        filter: invert();
+
+        a
+        {
+            font-size: 25px;
+        }
+
+        .hide_side
+        {
+            display: none;
+
+            @media screen and (min-width:1200px)
+            {
+                display: block;
+            }
+        }
+    }  
+}
+
 
 /* #endregion Main */
 
